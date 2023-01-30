@@ -2,10 +2,11 @@
 <summary>Exercise 0: Clone Git Repository</summary>
 <br />
 
+**Tasks:**
 - clone the git repository `git@gitlab.com:devops-bootcamp3/node-project.git`
 - create your own project/git repo from it
 
-**steps:**
+**Steps to solve the tasks:**
 
 ```sh
 git clone git@gitlab.com:devops-bootcamp3/node-project.git
