@@ -1,5 +1,5 @@
 # DevOps Bootcamp
-## Module 0 "Cloud and IaaS Basics"
+## Module 05 "Cloud and IaaS Basics"
 <br />
 
 This project contains notes related to the videos and exercises in Module 05 "Cloud and IaaS Basics" of Nana Janashia's [DevOps Bootcamp](https://www.techworld-with-nana.com/devops-bootcamp).
