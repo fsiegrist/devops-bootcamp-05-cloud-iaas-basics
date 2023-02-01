@@ -3,10 +3,12 @@
 <br />
 
 **Tasks:**
+
 - clone the git repository `git@gitlab.com:devops-bootcamp3/node-project.git`
 - create your own project/git repo from it
 
 **Steps to solve the tasks:**
+
 ```sh
 git clone git@gitlab.com:devops-bootcamp3/node-project.git
 cd node-project
@@ -35,10 +37,12 @@ git push -u origin main
 <br />
 
 **Tasks:**
+
 To have just 1 file, you create an artifact from the Node App. So you do the following:
 - Package your Node app into a tar file (npm pack)
 
 **Steps to solve the tasks:**
+
 ```sh
 cd app
 npm pack
@@ -54,10 +58,12 @@ This creates a tar file called `bootcamp-node-project-1.0.0.tgz`.
 <br />
 
 **Tasks:**
+
 Your company uses DigitalOcean as Infrastructure as a Service platform, instead of having on-premise servers. So you:
 - Create a new droplet server on DigitalOcean
 
 **Steps to solve the tasks:**
+
 Create a droplet:
 - Login to your account on [DigitalOcean](https://cloud.digitalocean.com/login).
 - Choose Create > Droplets
@@ -89,10 +95,12 @@ SSH into the server:
 <br />
 
 **Tasks:**
+
 Now you have a new fresh server nothing installed on it. Because you want to run a NodeJS application you need to install Node and npm on it:
 - Install nodejs & npm on it
 
 **Steps to solve the tasks:**
+
 ```sh
 # ssh into the server
 ssh root@<droplet-ip-address>
@@ -109,10 +117,12 @@ apt install -y nodejs npm
 <br />
 
 **Tasks:**
+
 Having everything prepared for the application, you finally:
 - Copy your simple Nodejs app tar file and package.json to the droplet
 
 **Steps to solve the tasks:**
+
 ```sh
 # on local machine in folder <project_root>, execute:
 scp app/bootcamp-node-project-1.0.0.tgz root@<droplte-ip-address>:/root
@@ -130,9 +140,11 @@ scp app/bootcamp-node-project-1.0.0.tgz root@<droplte-ip-address>:/root
 <br />
 
 **Tasks:**
+
 Start the node application in detached mode (npm install and node server.js commands)
 
 **Steps to solve the tasks:**
+
 ```sh
 # ssh into the server on DigitalOcean
 ssh root@<droplet-ip-address>
@@ -158,11 +170,13 @@ node server.js &
 <br />
 
 **Tasks:**
+
 You see that the application is not accessible through the browser, because all ports are closed on the server. So you:
 - Open the correct port on Droplet
 - and access the UI from browser
 
 **Steps to solve the tasks:**
+
 The application is running on port 3000. To open this port for browsers from any IP address, login to your account on [DigitalOcean](https://cloud.digitalocean.com/login) and add another rule of type "Custom", TCP, port 3000, for any IP adresses to the firewall ('droplet-firewall') created in exercise 2.
 
 Now the application can be accessed in the browser via http://<droplet-ip-address>:3000
