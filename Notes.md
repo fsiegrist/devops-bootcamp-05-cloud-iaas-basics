@@ -11,7 +11,7 @@ On DigitalOcean servers (virtual machines) are called `Droplets`.
 
 Create your first Droplet:
 - Choose Create > Droplets
-- Select the closes region (Frankfurt)
+- Select the closest region (Frankfurt)
 - Choose image (Ubuntu 22.10 x64)
 - Choose size (Droplet Type 'Basic')
 - Choose CPU options (Regular, $4/month -> 512 MB)
@@ -55,7 +55,7 @@ Start the application on the server:
 - `ssh root@<droplet-ip-address>`
 - `java -jar java-react-example.jar`
 
-The application starts and prints out: "Tomcat started on port(s): 7071 (http)". To open this port for browsers from any IP address, add another rule of type "Custom", tcp, port 7071, for any IP adresses to the droplet-firewall you created before.
+The application starts and prints out: "Tomcat started on port(s): 7071 (http)". To open this port for browsers from any IP address, add another rule of type "Custom", TCP, port 7071, for any IP adresses to the droplet-firewall you created before.
 
 Open the application in your browser calling `http://<droplet-ip-address>:7071`
 
