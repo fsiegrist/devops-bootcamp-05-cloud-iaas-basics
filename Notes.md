@@ -63,3 +63,35 @@ To run the application in the background, start it executing `java -jar java-rea
 Use `ps aux` and `netstat -tlnp` (install it first using `apt install net-tools`) to get the process PID and the port.
 
 </details>
+
+*****
+
+<details>
+<summary>Video: Create and configure a Linux user on a cloud server</summary>
+<br />
+
+You should never work a server as root user. So create a new user on the Droplet.
+- `adduser fesi`
+
+Now add that user to the sudo group. Members of the sudo group can call the sudo command and execute single commands as root user.
+- `usermod -aG sudo fesi`
+    - -a Add the user to the supplementary group(s). Use only with the -G option.
+    - -G A list of supplementary groups which the user is also a member of. Each group is separated from the next by a comma, with no intervening whitespace.
+
+Now you can switch to the new user with `su - fesi`.
+
+To be able to login as `fesi` via ssh, you have to copy your public key (from ~/.ssh) into a file `/home/fesi/.ssh/authorized_keys`.
+- execute `pbcopy < ~/.ssh/id_rsa.pub` on your local machine
+- `ssh root@<droplet-ip-address>`
+- `su - fesi`
+- `mkdir .ssh`
+- `sudo vim .ssh/authorized_keys`, paste the copied key into that file and save it
+- `exit`
+- `exit`
+
+Now you can ssh into the Droplet as user `fesi`:
+- `ssh fesi@<droplet-ip-address>`
+
+</details>
+
+*****
