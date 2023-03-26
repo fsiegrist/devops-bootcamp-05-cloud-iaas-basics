@@ -1,3 +1,6 @@
+## Exercises
+<br />
+
 <details>
 <summary>Exercise 0: Clone Git Repository</summary>
 <br />
