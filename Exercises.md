@@ -159,7 +159,7 @@ tar zxvf bootcamp-node-project-1.0.0.tgz
 cd package
 # install dependencies
 npm install
-# run the application in detached mode
+# run the application in the background
 node server.js &
 # the server now listens on port 3000 (ps aux | grep node; netstat -tlnp)
 ```
@@ -182,6 +182,6 @@ You see that the application is not accessible through the browser, because all 
 
 The application is running on port 3000. To open this port for browsers from any IP address, login to your account on [DigitalOcean](https://cloud.digitalocean.com/login) and add another rule of type "Custom", TCP, port 3000, for any IP adresses to the firewall ('droplet-firewall') created in exercise 2.
 
-Now the application can be accessed in the browser via http://<droplet-ip-address>:3000
+Now the application can be accessed in the browser under `http://<droplet-ip-address>:3000`
 
 ******
