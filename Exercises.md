@@ -128,7 +128,7 @@ Having everything prepared for the application, you finally:
 
 ```sh
 # on local machine in folder <project_root>, execute:
-scp app/bootcamp-node-project-1.0.0.tgz root@<droplte-ip-address>:/root
+scp app/bootcamp-node-project-1.0.0.tgz root@<droplet-ip-address>:/root
 
 # the file package.json is already contained in the packed tar file we just copied into the droplet
 # so there's no need to copy it separately
